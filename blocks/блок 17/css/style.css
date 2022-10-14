@@ -1,0 +1,73 @@
+
+@import "colors.css";
+/*Start Index*/
+
+
+@font-face {
+	font-family: "Oswald";
+	src: url("../fonts/Oswald-VariableFont_wght.ttf");
+  }
+  * {
+	margin: 0;
+	padding: 0;
+	font-family: "Oswald";
+  }
+  
+  a {
+	padding: 0;
+	text-decoration: none;
+  }
+  
+.block img{
+	width:100%;
+	height:auto;
+}
+
+.block h5{
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+.block p{
+	font-size: 18px;
+	margin-top: 15px;
+}
+
+.krug {
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+@media (max-width: 767px) {
+  .krug {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+}
+
+.krug1 {
+  margin-bottom: 40px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 30px 15px;
+  border-radius: 12px;
+}
+
+
+.krug1 .box {
+  width: 170px;
+  height: 170px;
+  position: relative;
+  margin: 0px auto 25px;
+}
+
+.krug1 .image {
+  border-radius: 50%;
+}
+
+.krug1 .image img {
+  width: 100%;
+  border-radius: 50%;
+}

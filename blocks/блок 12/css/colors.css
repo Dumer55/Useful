@@ -1,0 +1,16 @@
+:root{
+  --clr1:white;
+  --clr2:#ef5058;
+  --clr4:#96191f;
+}
+        .nav-link{
+          color: var(--clr1)!important;
+        }
+      
+      .nav-link:hover {
+        color: var(--clr4)!important;
+        }
+      
+.navbar{
+        background-color:var(--clr2);
+      }

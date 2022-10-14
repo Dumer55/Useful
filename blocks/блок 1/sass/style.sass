@@ -1,0 +1,67 @@
+@font-face
+	font-family: "Oswald"
+	src: url("fonts/Oswald-VariableFont_wght.ttf")
+
+*
+	margin: 0
+	padding: 0
+	font-family: "Oswald"
+
+a
+	padding: 0
+	text-decoration: none
+
+.container2
+	position: relative
+	max-width: 100%
+	display: grid
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+	grid-template-rows: minmax(100px, auto)
+	margin: 50px
+	grid-auto-flow: dense
+	
+.container2 .box
+	margin: 3px
+	background-color: #9DA3FD
+	padding: 20px
+	display: grid
+	font-size: 20px
+	place-item: center
+	text-align: center
+	color: black
+	transition: 0.5s
+	
+.container2 .box:hover
+	background-color: grey
+	
+.container2 .box:nth-child(1)
+	grid-column: span 2
+	grid-row: span 1
+	
+.container2 .box:nth-child(2)
+	grid-column: span 1
+	grid-row: span 2
+	
+.container2 .box:nth-child(4)
+	grid-column: span 2
+	grid-row: span 1
+	
+.container2 .box:nth-child(5)
+	grid-column: span 3
+	grid-row: span 1
+	
+@media (max-width:991px)
+	.container2
+		grid-template-columns: repeat(auto-fill, minmax(50%, 1fr))
+		grid-template-rows: minmax(auto, auto)
+	.container2 .box
+		grid-template-columns: unset !important
+		grid-template-rows: unset !important
+		
+@media (min-width:992px)
+	.container2
+		grid-template-columns: repeat(auto-fill, minmax(50%, 1fr))
+		grid-template-rows: minmax(auto, auto)
+	.container2 .box
+		grid-template-columns: unset !important
+		grid-template-rows: unset !important
